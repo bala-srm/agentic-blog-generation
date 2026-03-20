@@ -49,7 +49,7 @@ class BlogNode:
         
         if "topic" in state and state["topic"]:
             topic = state["topic"]
-            title = state["blog"].title
+            title = state["blog"]["title"]
             prompt = f"""
             You are an expert blog writer. Using markdown formatting, generate a detailed, informative, and engaging 
             blog post based on the following title and topic:

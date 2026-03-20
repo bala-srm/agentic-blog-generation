@@ -27,3 +27,7 @@ class GraphBuilder:
         # return the compiled graph
         return self.graph.compile()
     
+    def setup_graph(self, usecase):
+        if usecase == "topic":
+            return self.build_topic_graph()
+    
